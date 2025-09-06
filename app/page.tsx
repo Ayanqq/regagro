@@ -15,13 +15,21 @@ export default function Home() {
 
     useEffect(() => {
         function fixScale() {
-            const scaleFix = 1 / window.devicePixelRatio;
+            // допустим "ноутбуки" — это ширина >= 1024px
+            if (window.innerWidth >= 1024) {
+                const scaleFix = 1 / window.devicePixelRatio;
 
-            document.body.style.transform = `scale(${scaleFix})`;
-            document.body.style.transformOrigin = '0 0';
+                document.body.style.transform = `scale(${scaleFix})`;
+                document.body.style.transformOrigin = '0 0';
 
-            document.body.style.width = 100 * window.devicePixelRatio + '%';
-            document.body.style.height = 100 * window.devicePixelRatio + '%';
+                document.body.style.width = 100 * window.devicePixelRatio + '%';
+                document.body.style.height = 100 * window.devicePixelRatio + '%';
+            } else {
+                // сбросить изменения, если снова зашли на мобилке
+                document.body.style.transform = '';
+                document.body.style.width = '';
+                document.body.style.height = '';
+            }
         }
 
         fixScale();
