@@ -6,7 +6,7 @@ import Pagination from './Pagination';
 export default function ContactSection({sections, setCurrentSection, currentSection}: {sections: string[], setCurrentSection: (section: string) => void, currentSection: string}) {
     return (
         <section id="contacts" className={'pt-[60px] md:pt-[110px] relative'}>
-            <Container className={'relative'}>
+            <Container className={'relative dpr-125:about'}>
                 <Pagination sections={sections} onSectionChange={setCurrentSection} currentSection={currentSection} />
                 <div className="absolute top-0 md:left-0 right-0 bottom-[0px] z-10">
                     <img
@@ -20,7 +20,7 @@ export default function ContactSection({sections, setCurrentSection, currentSect
                         className="w-full h-full object-cover block md:hidden rounded-[20px]"
                     />
                 </div>
-                <div className="z-20 relative pt-[30px] md:pt-[60px]">
+                <div className="z-20 relative pt-[30px] md:pt-[60px] dpr-125:aboutPadding">
                     <Headtitle minTitle={'request'} title={'Have any questions? Write to us — we’ll help you out'}/>
                     <div className={'flex flex-col md:flex md:flex-row gap-[30px] md:gap-[115px] mt-[14px] md:mt-[25px]'}>
                         <form className={'max-w-[615px] flex flex-col gap-[20px] md:gap-[30px]'}>
