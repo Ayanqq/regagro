@@ -6,7 +6,7 @@ import Pagination from './Pagination';
 export default function MobileAppSection({sections, setCurrentSection, currentSection}: {sections: string[], setCurrentSection: (section: string) => void, currentSection: string}) {
     return (
         <section id="breed" className="relative pt-[60px] md:pt-[110px]">
-            <Container className={'flex flex-col gap-[30px] relative'}>
+            <Container className={'flex flex-col gap-[30px] relative dpr-125:about'}>
                 <Pagination sections={sections} onSectionChange={setCurrentSection} currentSection={currentSection} />
             <div className="absolute inset-0">
                 {/* Desktop Image */}
@@ -22,7 +22,7 @@ export default function MobileAppSection({sections, setCurrentSection, currentSe
                   className="w-full h-full rounded-[20px] md:hidden"
                 />
                 </div>
-                <div className="z-20 relative md:pt-[60px] pt-[30px]">
+                <div className="z-20 relative md:pt-[60px] pt-[30px] dpr-125:aboutPadding">
                     <div className={'w-[246px] md:w-auto'}>
                         <Headtitle minTitle={'it solutions'} title={'Mobile app for pets and livestock'}/>
                     </div>

@@ -7,6 +7,68 @@
     .font-jakarta {
         font-family: var(--font-jakarta), sans-serif;
     }
+
+    @media (min-resolution: 1.24dppx) and (max-resolution: 1.26dppx) {
+
+        .dpr-125\:heightHero {
+            height:575px;
+        }
+
+        .dpr-125\:about {
+            height:590px;
+        }
+
+        .dpr-125\:aboutPadding {
+            padding-top:0;
+        }
+
+        .dpr-125\:imgProduct {
+            width:500px;
+        }
+
+        .dpr-125\:gapProduct {
+            gap:5px;
+        }
+
+        .dpr-125\:topProduct {
+            top:0;
+        }
+
+        .dpr-125\:bulletinBoard {
+            padding-top:10px;
+        }
+
+        .dpr-125\:bulletinBoardPlayer {
+            width:500px;
+            margin-left: 0;
+        }
+
+        .dpr-125\:bulletinBoardHeight {
+            height:687px;
+        }
+
+        .dpr-125\:bulletinBoardPositions {
+            top:90px;
+            right:500px;
+        }
+
+        .dpr-125\:bulletinBoardImg {
+            width:350px;
+        }
+
+        .dpr-125\:bulletinBoardPositionItem {
+            right:340px;
+            top:30px;
+        }
+
+        .dpr-125\:bulletinBoardPositionItem3 {
+            right:325px;
+        }
+
+        .dpr-125\:companyNewsHeight {
+            height:614px;
+        }
+    }
 }
 
 html {

@@ -9,7 +9,7 @@ export default function ProductsSection({sections, setCurrentSection, currentSec
     const [isHovered, setIsHovered] = useState(false);
     return (
         <section id="catalog" className="relative bg-white pt-[60px] md:pt-[110px]">
-            <div className="max-w-[920px] lg:max-w-[1320px] mx-auto md:h-[595px] 2xl:h-[777px] h-[90vh] relative z-10">
+            <div className="max-w-[920px] lg:max-w-[1320px] mx-auto md:h-[595px] 2xl:h-[777px] h-[90vh] dpr-125:about relative z-10">
                 <Pagination sections={sections} onSectionChange={setCurrentSection} currentSection={currentSection} />
                 {/* Background Grass Texture */}
                 <div className="absolute inset-0">
@@ -28,7 +28,7 @@ export default function ProductsSection({sections, setCurrentSection, currentSec
                 </div>
 
                 <div
-                    className="relative flex items-start md:items-center md:flex-row flex-col md:px-7.5 px-[15px] md:pt-[60px] pt-[30px] md:gap-[174px] gap-[20px] z-20">
+                    className="relative flex items-start md:items-center md:flex-row flex-col md:px-7.5 px-[15px] md:pt-[60px] pt-[30px] md:gap-[174px] gap-[20px] z-20 dpr-125:aboutPadding">
                     {/* Left Content */}
                     <div className='w-full md:w-auto'>
                         <div className={'max-w-[230px] md:max-w-none'}>
@@ -42,7 +42,7 @@ export default function ProductsSection({sections, setCurrentSection, currentSec
                         </p>
 
                         <Image src="/images/book.png" alt="Products" width={734} height={335}
-                               className='md:block hidden'/>
+                               className='md:block hidden dpr-125:imgProduct'/>
                         <Image src="/images/book-mobile.png" alt="Products" width={345} height={260}
                                className='md:hidden block w-full'/>
 
@@ -56,10 +56,10 @@ export default function ProductsSection({sections, setCurrentSection, currentSec
                     
 
                     {/* Right Side - Product Features */}
-                    <div className="mt-[110px] md:flex flex-col gap-12 relative hidden">
+                    <div className="mt-[110px] md:flex flex-col gap-12 relative hidden dpr-125:gapProduct">
                         {/* Vertical Line with Dots */}
                         <div
-                            className="absolute -left-[22px] -top-[100px] bottom-0 flex flex-col items-center justify-center z-20">
+                            className="absolute -left-[22px] -top-[100px] bottom-0 flex flex-col items-center justify-center z-20 dpr-125:topProduct">
                             <Image src="/images/line.png" alt="Line" width={10} height={394}/>
                         </div>
                         {/* Product Feature 1 */}
@@ -95,7 +95,7 @@ export default function ProductsSection({sections, setCurrentSection, currentSec
 
 
                     <div
-                        className="absolute md:top-[60px] top-7.5 md:right-[106px] right-4 z-20 flex gap-4 items-center">
+                        className="absolute md:top-[60px] top-7.5 md:right-[106px] right-4 z-20 flex gap-4 items-center dpr-125:topProduct">
                         <div
                             className="text-[#4F584E] text-[12px] hidden md:block font-normal leading-[120%] tracking-[-2%]">
                             Explore the company’s <br/> expertise by watching <br/> the short video

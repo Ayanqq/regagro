@@ -12,8 +12,8 @@ export default function BulletinBoardSection({sections, setCurrentSection, curre
     currentSection: string
 }) {
     return (
-        <section id="bulletin-board" className="relative pt-[60px] md:pt-[110px]">
-            <Container className="relative">
+        <section id="bulletin-board" className="relative pt-[60px] md:pt-[110px] ">
+            <Container className="relative dpr-125:bulletinBoardHeight">
                 <Pagination sections={sections} onSectionChange={setCurrentSection} currentSection={currentSection}/>
                 <div className="absolute inset-0">
                     {/* Desktop Image */}
@@ -29,7 +29,7 @@ export default function BulletinBoardSection({sections, setCurrentSection, curre
                         className="w-full h-full rounded-[20px] md:hidden"
                     />
                 </div>
-                <div className="z-20 relative md:pt-[60px] pt-[30px]">
+                <div className="z-20 relative md:pt-[60px] pt-[30px] dpr-125:bulletinBoard">
                     <Headtitle minTitle={'it solutions'} title={'Professional bulletin board'}/>
                     <div className={'flex md:flex-row flex-col relative'}>
                         <div>
@@ -50,7 +50,7 @@ export default function BulletinBoardSection({sections, setCurrentSection, curre
                             </button>
                         </div>
                         <div className={' flex-col gap-[120px] md:block hidden'}>
-                            <div className={'max-w-[230px] flex flex-col absolute top-[70px] right-[280px]'}>
+                            <div className={'max-w-[230px] flex flex-col absolute top-[70px] right-[280px] dpr-125:bulletinBoardPositionItem'}>
                                 <h3 className={'text-[#355332] font-semibold text-[20px]'}>Benefit #1</h3>
                                 <p className={'text-[#4F584E] text-[12px] font-normal leading-[120%]'}>Automatic animal
                                     ePassport
@@ -77,7 +77,7 @@ export default function BulletinBoardSection({sections, setCurrentSection, curre
                                     </div>
                                 </div>
                             </div>
-                            <div className={'max-w-[230px] flex flex-col  absolute bottom-[40px] right-[280px]'}>
+                            <div className={'max-w-[230px] flex flex-col  absolute bottom-[40px] right-[280px] dpr-125:bulletinBoardPositionItem3'}>
                                 <h3 className={'text-[#355332] font-semibold text-[20px]'}>Benefit #3</h3>
                                 <p className={'text-[#4F584E] text-[12px] font-normal leading-[120%]'}>Integration with
                                     a mobile app for
@@ -110,9 +110,11 @@ export default function BulletinBoardSection({sections, setCurrentSection, curre
                             className="md:hidden block md:text-[17px] text-[14px] md:mt-[30px] mt-[20px] bg-[linear-gradient(90deg,#FFDA18_0%,#FFE55E_100%)] md:px-[60px] md:py-[24px] py-[18px] md:w-auto w-full max-w-[420px] rounded-full font-bold text-[#355332] cursor-pointer leading-[120%] tracking-[-2%]">
                             OPEN THE BULLETIN BOARD
                         </button>
-                        <div className={'absolute right-[400px] top-[130px]'}>
+                        <div className={'absolute right-[400px] top-[130px] dpr-125:bulletinBoardPositions'}>
                             <Image src={'/images/bulletinboard/Group 65-min.png'} width={393} height={325}
-                                   alt={'decoration'}/>
+                                   alt={'decoration'}
+                                   className={'dpr-125:bulletinBoardImg'}
+                            />
                         </div>
                     </div>
                 </div>

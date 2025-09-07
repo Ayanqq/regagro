@@ -17,7 +17,7 @@ export const VideoPlayer = ({text}: { text: string }) => {
     };
 
     return (
-        <div className="relative w-full aspect-video rounded-[16px] sm:rounded-[24px] overflow-hidden mx-auto">
+        <div className="relative w-full aspect-video rounded-[16px] sm:rounded-[24px] overflow-hidden mx-auto dpr-125:bulletinBoardPlayer">
             {/* YouTube iframe */}
             <YouTube
                 videoId="dQw4w9WgXcQ"
@@ -39,7 +39,7 @@ export const VideoPlayer = ({text}: { text: string }) => {
                         src="/images/mobilesection/player2.png"
                         alt="Custom preview"
                         fill
-                        className="object-contain"
+                        className="object-contain "
                     />
 
                     {/* Кастомная кнопка */}

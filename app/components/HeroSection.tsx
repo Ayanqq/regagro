@@ -10,7 +10,7 @@ export default function HeroSection({sections, setCurrentSection, currentSection
   return (
     <section id="hero" className="relative pt-[60px] md:pt-[110px]">
       {/* Content */}
-      <div className="max-w-[920px] lg:max-w-[1320px] 2xl:h-[777px] md:h-[630px] h-[90vh] mx-auto md:px-7.5 px-[15px] relative z-10">
+      <div className="max-w-[920px] lg:max-w-[1320px] 2xl:h-[777px] md:h-[630px] h-[90vh] dpr-125:heightHero mx-auto md:px-7.5 px-[15px] relative z-10">
         <Pagination sections={sections} onSectionChange={setCurrentSection} currentSection={currentSection} />
         {/* Background Image */}
         <div className="absolute inset-0">
@@ -62,17 +62,17 @@ export default function HeroSection({sections, setCurrentSection, currentSection
             <div className="md:order-1 order-2 text-white md:text-[17px] text-[12px] font-medium leading-[120%] tracking-[-2%]">
               Learn more about us by <br /> watching a short video
             </div>
-            <button 
+            <button
               className="cursor-pointer md:order-2 order-1"
               onMouseEnter={() => setIsHovered(true)}
               onMouseLeave={() => setIsHovered(false)}
             >
-              <Image 
-                src={isHovered ? "/images/play-hover.png" : "/images/play.png"} 
-                alt="Play" 
-                width={105} 
-                height={105} 
-                className="md:w-[105px] md:h-[105px]" 
+              <Image
+                src={isHovered ? "/images/play-hover.png" : "/images/play.png"}
+                alt="Play"
+                width={105}
+                height={105}
+                className="md:w-[105px] md:h-[105px]"
               />
             </button>
           </div>
