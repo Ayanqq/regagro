@@ -11,7 +11,7 @@
     @media (min-resolution: 1.24dppx) and (max-resolution: 1.26dppx) {
 
         .dpr-125\:heightHero {
-            height:575px;
+            height:600px;
         }
 
         .dpr-125\:about {
