@@ -56,7 +56,7 @@ export default function BulletinBoardSection({sections, setCurrentSection, curre
                                     ePassport
                                     retrieval from local veterinary authorities</p>
                             </div>
-                            <div className={'max-w-[260px] flex flex-col absolute bottom-[200px] right-[120px]'}>
+                            <div className={'max-w-[260px] flex flex-col absolute bottom-[200px] right-[120px] dpr-125:bulletinBoardPositionItem2'}>
                                 <h3 className={'text-[#355332] font-semibold text-[20px]'}>Benefit #2</h3>
                                 <p className={'text-[#4F584E] text-[12px] font-normal'}>Flexible ad settings:</p>
                                 <div className={'flex flex-wrap gap-[3px] mt-[5px]'}>
